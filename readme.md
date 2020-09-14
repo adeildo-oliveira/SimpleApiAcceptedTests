@@ -44,3 +44,9 @@ Na classe ```DatabaseFixture.cs``` há uma connectionstring na qual será precis
 Lembrando que a conexão pode ficar em um arquivo de configuação também, contudo, para exemplificar, alteramos a connection através da classe ```DatabaseFixture.cs```.
 
 Testes de aceitação podem ser usados em diferentes cenários, um deles, é testar retornos da API, Sites, etc... Cenários aonde temos que realizar algum tipo de manutenção sejam eles em ```Sites```, ```API``` ou ```base de dados```, que podem vir a impactar o resultado do serviço, os testes de aceitação podem ajudar a identificar bugs.
+
+### Lib usada para o teste
+
+    Install-Package Microsoft.AspNetCore.TestHost -Version 3.1.8
+
+[Documentação Microsoft](https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/multi-container-microservice-net-applications/test-aspnet-core-services-web-apps)
